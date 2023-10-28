@@ -1,6 +1,8 @@
-## Rename HTML attributes
+## [ast-grep] Rename HTML attributes
 
 - Use-case: **Rename** `v-for` to `x-for` - (re: converting *Vue* to **AlpineJS**)
+
+[Playground...](https://ast-grep.github.io/playground.html#eyJtb2RlIjoiQ29uZmlnIiwibGFuZyI6Imh0bWwiLCJxdWVyeSI6IiIsInJld3JpdGUiOiIiLCJjb25maWciOiJpZDogcG4td2lwXG5sYW5ndWFnZTogaHRtbFxuXG5ydWxlOlxuICBraW5kOiBhdHRyaWJ1dGVfbmFtZSAgIyAvLyBmcm9tIFRyZWVTaXR0ZXJcbiAgcGF0dGVybjogJEFcbiAgcmVnZXg6IFwidi0oZm9yfGluaXQpXCIgIyAvLyBUT0RPOiBtb3JlLi4uXG50cmFuc2Zvcm06ICMgLy8gaHR0cHM6Ly9naXRodWIuY29tL2FzdC1ncmVwL2FzdC1ncmVwL2Rpc2N1c3Npb25zLzQ3N1xuICBDSEFOR0VEOlxuICAgIHJlcGxhY2U6XG4gICAgICBzb3VyY2U6ICRBXG4gICAgICByZXBsYWNlOiBcInYtKGZvcnxpbml0KVwiICMgLy8gU0FNRSBhcyBhYm92ZVxuICAgICAgYnk6ICd4LSQxJ1xuZml4OlxuICAkQ0hBTkdFRFxuIiwic291cmNlIjoiPHRlbXBsYXRlPlxuPHVsPlxuICA8bGkgcC1uPVwiaGlcIiB2LWZvcj1cIml0IGluIGl0ZW1zXCIgdi1pbml0PVwiY29uc29sZS5sb2coJ2hpICcpXCI+XG4gICAge3sgaXQuYWdlIH19XG4gIDwvbGk+XG48L3VsPlxuPHA+e3sgZm4oMTIzKSB9fXt7IG1zZyB9fXt7IG5hbWUgfX08L3A+XG48L3RlbXBsYXRlPlxuIn0=)
 
 ```yaml
 id: pn-wip
@@ -18,4 +20,17 @@ transform: # // https://github.com/ast-grep/ast-grep/discussions/477
       by: 'x-$1'
 fix:
   $CHANGED
+```
+
+Example HTML:
+
+```html
+<template>
+<ul>
+  <li p-n="hi" v-for="it in items" v-init="console.log('hi ')">
+    {{ it.age }}
+  </li>
+</ul>
+<p>{{ fn(123) }}{{ msg }}{{ name }}</p>
+</template>
 ```
