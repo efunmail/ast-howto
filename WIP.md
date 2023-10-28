@@ -34,3 +34,12 @@ Example HTML:
 <p>{{ fn(123) }}{{ msg }}{{ name }}</p>
 </template>
 ```
+
+----
+
+## MULTIPLE Rules (in YAML file)
+
+[Rewrite Code](https://ast-grep.github.io/guide/rewrite-code.html#using-fix-in-yaml-rule)
+
+> You can have multiple rules in one YAML file
+> by using the YAML document separator `---`.
