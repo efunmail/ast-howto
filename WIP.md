@@ -1,4 +1,4 @@
-## [ast-grep] Rename HTML attributes
+## [ast-grep] RENAME Tag Attributes
 
 - Use-case: **Rename** `v-for` to `x-for` - (re: converting *Vue* to **AlpineJS**)
 
@@ -22,7 +22,7 @@ fix:
   $CHANGED
 ```
 
-Example HTML:
+- Example HTML:
 
 ```html
 <template>
@@ -43,3 +43,48 @@ Example HTML:
 
 > You can have multiple rules in one YAML file
 > by using the YAML document separator `---`.
+
+----
+
+## RENAME Tags
+
+[Playground...]()
+
+```yaml
+id: pn-vue-script
+language: html
+rule:
+  pattern: <script>$$$A</script>
+fix: <TODO:SCRIPT>$$$A</TODO:SCRIPT>
+
+---
+
+id: pn-vue-template
+language: html
+rule:
+  pattern: <template lang>$$$A</template>
+fix: <TODO:BODY>$$$A</TODO:BODY>
+```
+
+- Example HTML:
+
+```html
+<script>
+var x = 123
+function f(n) { return n }
+</script>
+
+<template lang="pug">
+div
+  p Hello
+</template>
+
+<template lang="html">
+<div>
+  <p>Hello</p>
+</div>
+<template>
+  <p>Hiya!</p>
+</template>
+</template>
+```
