@@ -48,7 +48,11 @@ fix:
 
 ## RENAME Tags
 
-[Playground...]()
+[Playground...](https://ast-grep.github.io/playground.html#eyJtb2RlIjoiQ29uZmlnIiwibGFuZyI6Imh0bWwiLCJxdWVyeSI6IiIsInJld3JpdGUiOiIiLCJjb25maWciOiJpZDogcG4tdnVlLXNjcmlwdFxubGFuZ3VhZ2U6IGh0bWxcbnJ1bGU6XG4gIHBhdHRlcm46IDxzY3JpcHQ+JCQkQTwvc2NyaXB0PlxuZml4OiA8VE9ETzpTQ1JJUFQ+JCQkQTwvVE9ETzpTQ1JJUFQ+XG5cbi0tLVxuXG5pZDogcG4tdnVlLXRlbXBsYXRlXG5sYW5ndWFnZTogaHRtbFxucnVsZTpcbiAgcGF0dGVybjogPHRlbXBsYXRlIGxhbmc+JCQkQTwvdGVtcGxhdGU+XG5maXg6IDxUT0RPOkJPRFk+JCQkQTwvVE9ETzpCT0RZPlxuIiwic291cmNlIjoiPHNjcmlwdD5cbnZhciB4ID0gMTIzXG5mdW5jdGlvbiBmKG4pIHsgcmV0dXJuIG4gfVxuPC9zY3JpcHQ+XG5cbjx0ZW1wbGF0ZSBsYW5nPVwicHVnXCI+XG5kaXZcbiAgcCBIZWxsb1xuPC90ZW1wbGF0ZT5cblxuPHRlbXBsYXRlIGxhbmc9XCJodG1sXCI+XG48ZGl2PlxuICA8cD5IZWxsbzwvcD5cbjwvZGl2PlxuPHRlbXBsYXRlPlxuICA8cD5IaXlhITwvcD5cbjwvdGVtcGxhdGU+XG48L3RlbXBsYXRlPlxuIn0=)
+
+- NOTEs:
+    - **`$$$A`** - (for `<template>`)
+    - `<template lang>` - re: **`<template lang="pug">`** or **`<template lang="html">`** 
 
 ```yaml
 id: pn-vue-script
